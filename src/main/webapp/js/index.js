@@ -30,11 +30,11 @@ function putTaskInHTML(task) {
 loadTask();
 
 function addTask() {
-    var nametodo = document.getElementById('task').value;
+    var nameTodo = document.getElementById('task').value;
 
     if (nametodo.trim().length > 0) {
         $.ajax({
-            url: 'tasklist?action=write&task=' + nametodo
+            url: 'tasklist?action=write&task=' + nameTodo
         }).done(function (response) {
             location.href = "index.jsp";
         });
