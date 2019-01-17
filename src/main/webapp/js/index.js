@@ -80,7 +80,6 @@ function putDoneTasksInHTML(donetasks) {
     var list = '';
     for (var i = 0; i < donetasks.length; i++) {
         var doneTasks = donetasks[i];
-        var doneTasksId = donetasks[i].id;
 
         var doneTaskList = '<li><div class="TaskArea">' +
             '<div class="row">' +
